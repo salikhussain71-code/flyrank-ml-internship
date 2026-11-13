@@ -1,0 +1,1 @@
+TODO: replace this whole line with the direct public URL of your deployed paper (see docs/GITHUB_UPLOAD_GUIDE.md)

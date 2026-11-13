@@ -1,0 +1,11 @@
+# Provisional lane: Refresh / Content Opportunity Scoring (candidate ONLY).
+# The lane is not final until the real schema has been inspected (see docs/METHODOLOGY.md).
+lane: refresh_content_opportunity_scoring
+lane_status: provisional
+window_days: 28
+horizon_days: 28
+decline_threshold: 0.30
+min_recent_clicks: 10
+valid_fraction: 0.3
+seed: 42
+top_k: 10

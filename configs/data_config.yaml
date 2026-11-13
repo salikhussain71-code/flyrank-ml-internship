@@ -1,0 +1,15 @@
+# Data configuration. Fill the TODO fields AFTER running the schema inspection in the
+# capstone notebook against the real FlyRank warehouse. Do not guess column names.
+hf_dataset_repo: null        # TODO: copy the dataset repo id from the FlyRank "FlyRank Warehouse Dataset" resource card
+hf_glob: null                # TODO: e.g. hf://datasets/<org>/<repo>/**/*.parquet
+daily_table: null            # TODO: parquet path/table holding page-level daily search metrics
+columns:
+  page_id: null              # TODO: column identifying a page/content item
+  date: null                 # TODO: daily date column
+  clicks: null               # TODO
+  impressions: null          # TODO
+# Optional columns discovered during inspection (engagement, AI-referral sessions, etc.)
+optional_columns: {}
+public_output_rules:
+  never_publish: [client_names, domains, urls, private_queries, credentials, raw_exports]
+  pseudonymize_page_ids: true
